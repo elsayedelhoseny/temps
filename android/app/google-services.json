@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "946923857460",
+    "project_id": "testnewtemp-85c9c",
+    "storage_bucket": "testnewtemp-85c9c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:946923857460:android:cb1bd2c294aa274f9f0c61",
+        "android_client_info": {
+          "package_name": "com.trujena.oliviaaa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUxixFNxLe_L46v1vWS0JghqjiFtjviAA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

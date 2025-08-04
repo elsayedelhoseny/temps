@@ -1,0 +1,160 @@
+{
+
+    "navbar":{
+        "link1":"Home",
+        "link2":"About",
+        "link3":"Courses",
+        "link4":"Packages",
+        "link5":"Leadboard",
+        "link6":"Our store",
+        "link7":"Contact"
+    },
+
+    "header":{
+            "signingTitle":"Learn Imagine ",
+            "sacond-title":"Create"
+    },
+    "statices":{
+        "courcesNumber":"cources",
+        "studentNumber":"Students",
+        "FgamesNumber":"Games",
+        "experienceYears":"Experience "
+ 
+     },
+     "Learning-stages":{
+        "section-one":{
+            "btn":"education stagess",
+            "heading":"Programming and creativity courses for children",
+            "txt":"It is an introductory stage in programming languages, programming, and a simple overview of the computer and how it receives orders to be executed properly."
+        }
+    },
+    "content-opnion":{
+        "heading":"What parents say about us"
+
+    },
+    "download-section":{
+        "heading":"Download app",
+        "andriod":"Google Play",
+        "iphone":"Apple Store "
+
+    },
+    "footer":{
+        "txt":"It is an introductory stage in programming languages, programming, and a simple overview of the computer and how it receives orders to be executed properly.s",
+        "copyright":"all rights are preserved",
+        "anhjj":"Anhjj"
+    },
+
+
+  
+
+    "about":{
+        "signingTitle":"About Anhjj ",
+        "header":"sIt is an introductory stage in programming languages, programming, and a simple overview of the computer and how it receives orders to be executed properly." ,
+      
+      "sectionOne":{
+        "heading":"Programming and creativity courses for children",
+        "txt":"sIt is an introductory stage in programming languages, programming, and a simple overview of the computer and how it receives orders to be executed properly.",
+        "contentOne":{
+                "signingTitle":"Learn to imagine create",
+                "txt":"It is an introductory stage in programming languages, programming, and a simple overview of the computer and how it receives orders to be executed properly."
+        },
+        "contentTwo":{
+            "signingTitle":"Learn to imagine create",
+            "txt":"It is an introductory stage in programming languages, programming, and a simple overview of the computer and how it receives orders to be executed properly." 
+        },
+        "contentThree":{
+            "signingTitle":"Learn to imagine create",
+            "txt":"It is an introductory stage in programming languages, programming, and a simple overview of the computer and how it receives orders to be executed properly." 
+        }
+    },
+    "sectionTwo":{
+        "heading":"Programming and creativity courses for children",
+        "txt":"It is an introductory stage in programming languages, programming, and a simple overview of the computer and how it receives orders to be executed properly.",
+        "txtSacond":"It is an introductory stage in programming languages, programming, and a simple overview of the computer and how it receives orders to be executed properly."
+
+    },
+    "sectionThree":{
+        "heading":"Programming and creativity courses for children",
+        "txt":"It is an introductory stage in programming languages, programming, and a simple overview of the computer and how it receives orders to be executed properly.",
+        "txtSacond":"It is an introductory stage in programming languages, programming, and a simple overview of the computer and how it receives orders to be executed properly."
+    }
+    },
+
+
+    "packages":{
+        "header":"packages",
+        "packageOne":{
+            "tittle":"Professional packages",
+            "description":" Do not worry about the registration process, we will prepare all the account information for you, including the design, and deliver it to you",
+            "price":"99 SAR",
+            "duration":"/monthly",
+            "packageContent":"The package contains",
+            "firstFeatures":"loyalty programme",
+            "sacondFeatures":"Unlimited number of clients",
+            "thirdFeatures":"loyalty programme",
+            "fourthFeatures":"Unlimited number of clients",
+            "subscribe":"subscribe  now"
+        },
+        "packageTwo":{
+            "tittle":"Professional packages",
+            "description":" Do not worry about the registration process, we will prepare all the account information for you, including the design, and deliver it to you",
+            "price":"99 SAR",
+            "duration":"/monthly",
+            "packageContent":"The package contains",
+            "firstFeatures":"loyalty programme",
+            "sacondFeatures":"Unlimited number of clients",
+            "thirdFeatures":"loyalty programme",
+            "fourthFeatures":"Unlimited number of clients",
+            "subscribe":"subscribe  now"
+        },
+        "packageThree":{
+            "tittle":"Professional packages",
+            "description":" Do not worry about the registration process, we will prepare all the account information for you, including the design, and deliver it to you",
+            "price":"99 SAR",
+            "duration":"/monthly",
+            "packageContent":"The package contains",
+            "firstFeatures":"loyalty programme",
+            "sacondFeatures":"Unlimited number of clients",
+            "thirdFeatures":"loyalty programme",
+            "fourthFeatures":"Unlimited number of clients",
+            "subscribe":"subscribe  now"
+        }
+
+    },
+
+
+    "leadboard":{
+        "tittle":"highest scoring students",
+        "firstScore":"First place",
+        "sacondScore":"Second place",
+        "thirdScore":"Third place",
+        "firstName":"salma",
+        "sacondName":"salma",
+        "thirdName":"salma",
+        "points":"250 Points"
+      },
+
+      
+      "logIn":{
+        "signUp":"Sign Up",
+        "login":"Log In",
+        "logAs":"Log AS",
+        "parent":"Parent",
+        "guest":"Guest",
+        "child":"Child",
+        "nextBtn":"Next",
+        "signingTitle":"Learn, imagine,",
+        "rSigningTitle":"create",
+        "noAccount":"Don't have an account?",
+        "newAccount":"Create a new account",
+        "phoneNum":"Mobile Number",
+        "pass":"Password",
+        "forgetPass":"did you forget your password ?"
+      }
+      
+
+
+
+
+    
+}
