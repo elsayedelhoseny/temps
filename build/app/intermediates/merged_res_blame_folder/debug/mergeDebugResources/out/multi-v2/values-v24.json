@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.trujena.oliviaaa.app-mergeDebugResources-63:/values-v24/values-v24.xml",
+            "outputFile": "com.example.tickntock.app-mergeDebugResources-63:/values-v24/values-v24.xml",
             "map": [
                 {
                     "source": "C:\\Users\\JMN\\.gradle\\caches\\8.9\\transforms\\98478eacda5b229ba6c690f79c08efa6\\transformed\\appcompat-1.6.1\\res\\values-v24\\values-v24.xml",

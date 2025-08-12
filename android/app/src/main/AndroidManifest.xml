@@ -32,14 +32,14 @@
 
     <application
         android:icon="@mipmap/ic_launcher"
-        android:label="Daily"
+        android:label="TickNTock"
         android:requestLegacyExternalStorage="true"
         android:usesCleartextTraffic="true"
         tools:ignore="Instantiatable">
 
         <!-- MainActivity Configuration -->
         <activity
-            android:name="com.trujena.oliviaaa.MainActivity"
+            android:name="com.example.tickntock.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
             android:exported="true"
             android:hardwareAccelerated="true"

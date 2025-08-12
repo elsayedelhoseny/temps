@@ -1,4 +1,4 @@
-com.trujena.oliviaaa
+com.example.tickntock
 anim abc_fade_in
 anim abc_fade_out
 anim abc_grow_fade_in_from_bottom
@@ -810,7 +810,7 @@ drawable ic_call_answer_video_low
 drawable ic_call_decline
 drawable ic_call_decline_low
 drawable ic_os_notification_fallback_white_24dp
-drawable ic_stat_3svapbv6ygn6lirtcotu8wevj2uqtub6xbgtvopq_1
+drawable ic_stat_onesignal_default
 drawable launch_background
 drawable notification_action_background
 drawable notification_bg

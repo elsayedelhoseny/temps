@@ -10,7 +10,6 @@ import '../../network/dio_helper.dart';
 import 'package:timezone/data/latest.dart' as tz;
 import 'package:timezone/timezone.dart' as tz;
 
-
 class OTPCubit extends Cubit<OTPStates> {
   OTPCubit() : super(OTPCubitInitial());
 
@@ -19,7 +18,6 @@ class OTPCubit extends Cubit<OTPStates> {
   String? otpToastMsg;
   String? waitingToastMsg;
   OTPModel? otpModel;
-
 
   Future<void> initiateOTPRequest() async {
     otpModel = null;
@@ -46,23 +44,22 @@ class OTPCubit extends Cubit<OTPStates> {
 
   int? timestamp;
 
-
-
-
   Future<void> requestOTPCode({String? otpMail}) async {
-    await Future.delayed(Duration(seconds: 10),);
+    await Future.delayed(
+      Duration(seconds: 10),
+    );
     waitingToastMsg = "Loading Reviewer OTP code,"
         "\n this process may take 1 min"
         "\n please don\'t resend and wait...";
     emit(LoadingToastState());
     try {
-
       print('======================================================$timestamp');
       final response = await DioHelper.getData(
         url: 'get-otp',
         query: {
           'email_account': otpMail,
-          'token': 'kyAm3M5vUxlU1vkMqRYs954UY3RcGVvvYevWDySHp8SO2lZgJwBbRGELyRO2U',
+          'token':
+              'kyAm3M5vUxlU1vkMqRYs954UY3RcGVvvYevWDySHp8SO2lZgJwBbRGELyRO2U',
           'timestamp': timestamp
         },
       );
@@ -72,10 +69,10 @@ class OTPCubit extends Cubit<OTPStates> {
       emit(LoadingToastState());
       if (otpModel?.error?.isNotEmpty ?? false) {
         await Future.delayed(Duration(seconds: 20));
-        if(state is! EndOTPState)
-          requestOTPCode(otpMail: otpMail);
+        if (state is! EndOTPState) requestOTPCode(otpMail: otpMail);
       } else {
-        otpToastMsg = "Your OTP code for email: $otpMail \n is ${otpModel?.otp ?? '- - - -'}";
+        otpToastMsg =
+            "Your OTP code for email: $otpMail \n is ${otpModel?.otp ?? '- - - -'}";
         print(otpToastMsg);
         emit(SuccessOTPResponseState());
         otpModel = null;
@@ -89,9 +86,7 @@ class OTPCubit extends Cubit<OTPStates> {
     }
   }
 
-
-  void dismissToast(){
+  void dismissToast() {
     emit(EndOTPState());
   }
-
 }

@@ -1,4 +1,3 @@
-
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -37,19 +36,21 @@ class SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     setStatusBarColor(
-      mainAppJson != null ?
-      hexToColor(mainAppJson!
-          .settings.splashScreenSection.components[0].backgroundColor) :
-      primaryColor,
+      mainAppJson != null
+          ? hexToColor(mainAppJson!
+              .settings.splashScreenSection.components[0].backgroundColor)
+          : primaryColor,
       statusBarBrightness: Platform.isIOS
-          ? (hexToColor(mainAppJson!
-          .settings.splashScreenSection.components[0].backgroundColor).isDark()
-          ? Brightness.dark
-          : Brightness.light)
-          :hexToColor(mainAppJson!
-          .settings.splashScreenSection.components[0].backgroundColor).isDark()?
-      Brightness.light :
-      Brightness.dark,
+          ? (hexToColor(mainAppJson!.settings.splashScreenSection.components[0]
+                      .backgroundColor)
+                  .isDark()
+              ? Brightness.dark
+              : Brightness.light)
+          : hexToColor(mainAppJson!.settings.splashScreenSection.components[0]
+                      .backgroundColor)
+                  .isDark()
+              ? Brightness.light
+              : Brightness.dark,
       // statusBarIconBrightness: Platform.isIOS
       //     ? (primaryColor.isDark()
       //     ? Brightness.dark
@@ -63,7 +64,6 @@ class SplashScreenState extends State<SplashScreen> {
   }
 
   void startAnimation() {
-
     Future.delayed(const Duration(milliseconds: 500), () {
       setState(() {
         isExpanded = true;
@@ -73,47 +73,40 @@ class SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return BlocConsumer<GlobalCubit, GlobalStates>(
-        listener: (context, state) {
-          if(state is! EndSplashState){
-
-          }
-        },
-        builder: (context, state) {
-          return Container(
-            decoration: BoxDecoration(
-              gradient: useGradient
-                  ? LinearGradient(
-                colors: [
-                  hexToColor(widget.gradientColor1 ?? '#102933'),
-                  hexToColor(widget.gradientColor2 ?? '#36535F'),
-                ],
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-              )
-                  : null,
-              color: useGradient
-                  ? null
-                  : mainAppJson != null ?
-              hexToColor(mainAppJson!
-                  .settings.splashScreenSection.components[0].backgroundColor) :
-              primaryColor,
-            ),
-            child: Center(
-              child: AnimatedContainer(
-                duration: const Duration(seconds: 4),
-                width: isExpanded ? 200 : 50,
-                height: isExpanded ? 200 : 50,
-                child: cachedImage(
-                   mainAppJson != null?
-                    mainAppJson!
-                        .settings.splashScreenSection.components[0].logoImage
-                        :
-                    ""
-                ),
-              ),
-            ),
-          );
-        });
+    return BlocConsumer<GlobalCubit, GlobalStates>(listener: (context, state) {
+      if (state is! EndSplashState) {}
+    }, builder: (context, state) {
+      return Container(
+        decoration: BoxDecoration(
+          gradient: useGradient
+              ? LinearGradient(
+                  colors: [
+                    hexToColor(widget.gradientColor1 ?? '#102933'),
+                    hexToColor(widget.gradientColor2 ?? '#36535F'),
+                  ],
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                )
+              : null,
+          color: useGradient
+              ? null
+              : mainAppJson != null
+                  ? hexToColor(mainAppJson!.settings.splashScreenSection
+                      .components[0].backgroundColor)
+                  : primaryColor,
+        ),
+        child: Center(
+          child: AnimatedContainer(
+            duration: const Duration(seconds: 4),
+            width: isExpanded ? 200 : 50,
+            height: isExpanded ? 200 : 50,
+            child: cachedImage(mainAppJson != null
+                ? mainAppJson!
+                    .settings.splashScreenSection.components[0].logoImage
+                : ""),
+          ),
+        ),
+      );
+    });
   }
 }

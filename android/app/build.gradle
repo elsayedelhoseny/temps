@@ -14,7 +14,7 @@ if (keystorePropertiesFile.exists()) {
 
 android {
     // TODO: modify your app bundle id
-    namespace 'com.trujena.oliviaaa'
+    namespace 'com.example.tickntock'
     compileSdk = flutter.compileSdkVersion
     ndkVersion = "27.0.12077973"
 //    ndkVersion = flutter.ndkVersion
@@ -30,7 +30,7 @@ android {
 
     defaultConfig {
         // TODO: modify your app bundle id
-        applicationId "com.trujena.oliviaaa"
+        applicationId "com.example.tickntock"
         minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode

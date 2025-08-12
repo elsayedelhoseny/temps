@@ -1,13 +1,10 @@
-
-
-
 import 'images.dart';
 
 List<String> onboarding1Images() {
   return [
-    Images.onboarding1Img1,
-    Images.onboarding1Img2,
-    Images.onboarding1Img3,
+    "assets/onboarding1.png",
+    "assets/onboarding2.png",
+    "assets/onboarding3.png"
   ];
 }
 
@@ -36,6 +33,3 @@ List<String> cartImages() {
     Images.user,
   ];
 }
-
-
-

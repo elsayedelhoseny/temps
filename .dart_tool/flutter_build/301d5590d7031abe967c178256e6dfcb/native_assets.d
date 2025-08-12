@@ -1,1 +1,0 @@
- C:\\Users\\JMN\\Desktop\\projects\\temps\\.dart_tool\\flutter_build\\301d5590d7031abe967c178256e6dfcb\\native_assets.yaml: 

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.trujena.oliviaaa.app-mergeDebugResources-63:/values-am/values-am.xml",
+            "outputFile": "com.example.tickntock.app-mergeDebugResources-63:/values-am/values-am.xml",
             "map": [
                 {
                     "source": "C:\\Users\\JMN\\.gradle\\caches\\8.9\\transforms\\fa7464161a7fdb291ab8d665c61cb402\\transformed\\jetified-play-services-base-18.0.1\\res\\values-am\\values.xml",

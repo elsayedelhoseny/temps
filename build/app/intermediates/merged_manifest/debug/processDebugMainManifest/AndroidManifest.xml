@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.trujena.oliviaaa"
+    package="com.example.tickntock"
     android:versionCode="1"
     android:versionName="1.0.56" >
 
@@ -44,10 +44,10 @@
     <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
     <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" /> <!-- Create a unique permission for your app and use it so only your app can receive your OneSignal messages. -->
     <permission
-        android:name="com.trujena.oliviaaa.permission.C2D_MESSAGE"
+        android:name="com.example.tickntock.permission.C2D_MESSAGE"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.trujena.oliviaaa.permission.C2D_MESSAGE" /> <!-- Required runtime permission to display notifications on Android 13 -->
+    <uses-permission android:name="com.example.tickntock.permission.C2D_MESSAGE" /> <!-- Required runtime permission to display notifications on Android 13 -->
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- c2dm RECEIVE are basic requirements for push messages through Google's FCM -->
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
     <!--
@@ -81,23 +81,23 @@
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
     <permission
-        android:name="com.trujena.oliviaaa.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:name="com.example.tickntock.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.trujena.oliviaaa.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+    <uses-permission android:name="com.example.tickntock.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 
     <application
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
         android:extractNativeLibs="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="Daily"
+        android:label="TickNTock"
         android:requestLegacyExternalStorage="true"
         android:usesCleartextTraffic="true" >
 
         <!-- MainActivity Configuration -->
         <activity
-            android:name="com.trujena.oliviaaa.MainActivity"
+            android:name="com.example.tickntock.MainActivity"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
             android:exported="true"
             android:hardwareAccelerated="true"
@@ -132,7 +132,7 @@
         <!-- FileProvider for Flutter InAppWebView -->
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="com.trujena.oliviaaa.flutter_inappwebview_android.fileprovider"
+            android:authorities="com.example.tickntock.flutter_inappwebview_android.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true" >
             <meta-data
@@ -218,7 +218,7 @@
         -->
         <provider
             android:name="dev.fluttercommunity.plus.share.ShareFileProvider"
-            android:authorities="com.trujena.oliviaaa.flutter.share_provider"
+            android:authorities="com.example.tickntock.flutter.share_provider"
             android:exported="false"
             android:grantUriPermissions="true" >
             <meta-data
@@ -255,7 +255,7 @@
             <intent-filter android:priority="999" >
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
 
-                <category android:name="com.trujena.oliviaaa" />
+                <category android:name="com.example.tickntock" />
             </intent-filter>
         </receiver>
 
@@ -337,7 +337,7 @@
 
         <provider
             android:name="com.google.firebase.provider.FirebaseInitProvider"
-            android:authorities="com.trujena.oliviaaa.firebaseinitprovider"
+            android:authorities="com.example.tickntock.firebaseinitprovider"
             android:directBootAware="true"
             android:exported="false"
             android:initOrder="100" />
@@ -375,7 +375,7 @@
 
         <provider
             android:name="androidx.startup.InitializationProvider"
-            android:authorities="com.trujena.oliviaaa.androidx-startup"
+            android:authorities="com.example.tickntock.androidx-startup"
             android:exported="false" >
             <meta-data
                 android:name="androidx.work.WorkManagerInitializer"

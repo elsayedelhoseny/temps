@@ -809,7 +809,7 @@ int drawable ic_call_answer_video_low 0x7f070072
 int drawable ic_call_decline 0x7f070073
 int drawable ic_call_decline_low 0x7f070074
 int drawable ic_os_notification_fallback_white_24dp 0x7f070075
-int drawable ic_stat_3svapbv6ygn6lirtcotu8wevj2uqtub6xbgtvopq_1 0x7f070076
+int drawable ic_stat_onesignal_default 0x7f070076
 int drawable launch_background 0x7f070077
 int drawable notification_action_background 0x7f070078
 int drawable notification_bg 0x7f070079

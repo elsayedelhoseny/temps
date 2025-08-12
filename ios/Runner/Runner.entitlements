@@ -6,7 +6,7 @@
 	<string>development</string>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.com.trujena.olivia.onesignal</string>
+		<string>group.com.example.tickntock.onesignal</string>
 	</array>
 </dict>
 </plist>

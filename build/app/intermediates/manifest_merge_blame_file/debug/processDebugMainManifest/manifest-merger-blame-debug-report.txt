@@ -1,6 +1,6 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.trujena.oliviaaa"
+3    package="com.example.tickntock"
 4    android:versionCode="1"
 5    android:versionName="1.0.56" >
 6
@@ -96,12 +96,12 @@
 45-->[com.google.android.gms:play-services-measurement-api:21.6.1] C:\Users\JMN\.gradle\caches\8.9\transforms\7dd30730cad90b4acc8e9362e6631cb2\transformed\jetified-play-services-measurement-api-21.6.1\AndroidManifest.xml:27:22-79
 46    <permission
 46-->[com.onesignal:notifications:5.1.26] C:\Users\JMN\.gradle\caches\8.9\transforms\c43925eb6a0c02ca207751e9dbd46bff\transformed\jetified-notifications-5.1.26\AndroidManifest.xml:10:5-12:47
-47        android:name="com.trujena.oliviaaa.permission.C2D_MESSAGE"
+47        android:name="com.example.tickntock.permission.C2D_MESSAGE"
 47-->[com.onesignal:notifications:5.1.26] C:\Users\JMN\.gradle\caches\8.9\transforms\c43925eb6a0c02ca207751e9dbd46bff\transformed\jetified-notifications-5.1.26\AndroidManifest.xml:11:9-63
 48        android:protectionLevel="signature" />
 48-->[com.onesignal:notifications:5.1.26] C:\Users\JMN\.gradle\caches\8.9\transforms\c43925eb6a0c02ca207751e9dbd46bff\transformed\jetified-notifications-5.1.26\AndroidManifest.xml:12:9-44
 49
-50    <uses-permission android:name="com.trujena.oliviaaa.permission.C2D_MESSAGE" /> <!-- Required runtime permission to display notifications on Android 13 -->
+50    <uses-permission android:name="com.example.tickntock.permission.C2D_MESSAGE" /> <!-- Required runtime permission to display notifications on Android 13 -->
 50-->[com.onesignal:notifications:5.1.26] C:\Users\JMN\.gradle\caches\8.9\transforms\c43925eb6a0c02ca207751e9dbd46bff\transformed\jetified-notifications-5.1.26\AndroidManifest.xml:14:5-79
 50-->[com.onesignal:notifications:5.1.26] C:\Users\JMN\.gradle\caches\8.9\transforms\c43925eb6a0c02ca207751e9dbd46bff\transformed\jetified-notifications-5.1.26\AndroidManifest.xml:14:22-76
 51    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- c2dm RECEIVE are basic requirements for push messages through Google's FCM -->
@@ -182,12 +182,12 @@
 82
 83    <permission
 83-->[androidx.core:core:1.13.1] C:\Users\JMN\.gradle\caches\8.9\transforms\9893ca400064fc62f650addc871959f1\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
-84        android:name="com.trujena.oliviaaa.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+84        android:name="com.example.tickntock.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
 84-->[androidx.core:core:1.13.1] C:\Users\JMN\.gradle\caches\8.9\transforms\9893ca400064fc62f650addc871959f1\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
 85        android:protectionLevel="signature" />
 85-->[androidx.core:core:1.13.1] C:\Users\JMN\.gradle\caches\8.9\transforms\9893ca400064fc62f650addc871959f1\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
 86
-87    <uses-permission android:name="com.trujena.oliviaaa.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+87    <uses-permission android:name="com.example.tickntock.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 87-->[androidx.core:core:1.13.1] C:\Users\JMN\.gradle\caches\8.9\transforms\9893ca400064fc62f650addc871959f1\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
 87-->[androidx.core:core:1.13.1] C:\Users\JMN\.gradle\caches\8.9\transforms\9893ca400064fc62f650addc871959f1\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
 88
@@ -199,8 +199,8 @@
 92        android:extractNativeLibs="true"
 93        android:icon="@mipmap/ic_launcher"
 93-->C:\Users\JMN\Desktop\projects\temps\android\app\src\main\AndroidManifest.xml:34:9-43
-94        android:label="Daily"
-94-->C:\Users\JMN\Desktop\projects\temps\android\app\src\main\AndroidManifest.xml:35:9-30
+94        android:label="TickNTock"
+94-->C:\Users\JMN\Desktop\projects\temps\android\app\src\main\AndroidManifest.xml:35:9-34
 95        android:requestLegacyExternalStorage="true"
 95-->C:\Users\JMN\Desktop\projects\temps\android\app\src\main\AndroidManifest.xml:36:9-52
 96        android:usesCleartextTraffic="true" >
@@ -209,8 +209,8 @@
 98        <!-- MainActivity Configuration -->
 99        <activity
 99-->C:\Users\JMN\Desktop\projects\temps\android\app\src\main\AndroidManifest.xml:41:9-66:20
-100            android:name="com.trujena.oliviaaa.MainActivity"
-100-->C:\Users\JMN\Desktop\projects\temps\android\app\src\main\AndroidManifest.xml:42:13-61
+100            android:name="com.example.tickntock.MainActivity"
+100-->C:\Users\JMN\Desktop\projects\temps\android\app\src\main\AndroidManifest.xml:42:13-62
 101            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
 101-->C:\Users\JMN\Desktop\projects\temps\android\app\src\main\AndroidManifest.xml:43:13-163
 102            android:exported="true"
@@ -267,7 +267,7 @@
 132        <!-- FileProvider for Flutter InAppWebView -->
 133        <provider
 134            android:name="androidx.core.content.FileProvider"
-135            android:authorities="com.trujena.oliviaaa.flutter_inappwebview_android.fileprovider"
+135            android:authorities="com.example.tickntock.flutter_inappwebview_android.fileprovider"
 136            android:exported="false"
 137            android:grantUriPermissions="true" >
 138            <meta-data
@@ -425,7 +425,7 @@
 219-->[:share_plus] C:\Users\JMN\Desktop\projects\temps\build\share_plus\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:13:9-21:20
 220            android:name="dev.fluttercommunity.plus.share.ShareFileProvider"
 220-->[:share_plus] C:\Users\JMN\Desktop\projects\temps\build\share_plus\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:14:13-77
-221            android:authorities="com.trujena.oliviaaa.flutter.share_provider"
+221            android:authorities="com.example.tickntock.flutter.share_provider"
 221-->[:share_plus] C:\Users\JMN\Desktop\projects\temps\build\share_plus\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:15:13-74
 222            android:exported="false"
 222-->[:share_plus] C:\Users\JMN\Desktop\projects\temps\build\share_plus\intermediates\merged_manifest\debug\processDebugManifest\AndroidManifest.xml:16:13-37
@@ -489,7 +489,7 @@
 256-->[com.onesignal:notifications:5.1.26] C:\Users\JMN\.gradle\caches\8.9\transforms\c43925eb6a0c02ca207751e9dbd46bff\transformed\jetified-notifications-5.1.26\AndroidManifest.xml:56:17-81
 256-->[com.onesignal:notifications:5.1.26] C:\Users\JMN\.gradle\caches\8.9\transforms\c43925eb6a0c02ca207751e9dbd46bff\transformed\jetified-notifications-5.1.26\AndroidManifest.xml:56:25-78
 257
-258                <category android:name="com.trujena.oliviaaa" />
+258                <category android:name="com.example.tickntock" />
 258-->[com.onesignal:notifications:5.1.26] C:\Users\JMN\.gradle\caches\8.9\transforms\c43925eb6a0c02ca207751e9dbd46bff\transformed\jetified-notifications-5.1.26\AndroidManifest.xml:58:17-61
 258-->[com.onesignal:notifications:5.1.26] C:\Users\JMN\.gradle\caches\8.9\transforms\c43925eb6a0c02ca207751e9dbd46bff\transformed\jetified-notifications-5.1.26\AndroidManifest.xml:58:27-58
 259            </intent-filter>
@@ -637,7 +637,7 @@
 338-->[com.google.firebase:firebase-common:20.4.3] C:\Users\JMN\.gradle\caches\8.9\transforms\4bc10db179931d6c13a1fbcf6010861b\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:23:9-28:39
 339            android:name="com.google.firebase.provider.FirebaseInitProvider"
 339-->[com.google.firebase:firebase-common:20.4.3] C:\Users\JMN\.gradle\caches\8.9\transforms\4bc10db179931d6c13a1fbcf6010861b\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:24:13-77
-340            android:authorities="com.trujena.oliviaaa.firebaseinitprovider"
+340            android:authorities="com.example.tickntock.firebaseinitprovider"
 340-->[com.google.firebase:firebase-common:20.4.3] C:\Users\JMN\.gradle\caches\8.9\transforms\4bc10db179931d6c13a1fbcf6010861b\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:25:13-72
 341            android:directBootAware="true"
 341-->[com.google.firebase:firebase-common:20.4.3] C:\Users\JMN\.gradle\caches\8.9\transforms\4bc10db179931d6c13a1fbcf6010861b\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:26:13-43
@@ -706,7 +706,7 @@
 376-->[androidx.work:work-runtime:2.8.1] C:\Users\JMN\.gradle\caches\8.9\transforms\5cee5b2ba80d56909e971fad8789d097\transformed\work-runtime-2.8.1\AndroidManifest.xml:29:9-37:20
 377            android:name="androidx.startup.InitializationProvider"
 377-->[androidx.work:work-runtime:2.8.1] C:\Users\JMN\.gradle\caches\8.9\transforms\5cee5b2ba80d56909e971fad8789d097\transformed\work-runtime-2.8.1\AndroidManifest.xml:30:13-67
-378            android:authorities="com.trujena.oliviaaa.androidx-startup"
+378            android:authorities="com.example.tickntock.androidx-startup"
 378-->[androidx.work:work-runtime:2.8.1] C:\Users\JMN\.gradle\caches\8.9\transforms\5cee5b2ba80d56909e971fad8789d097\transformed\work-runtime-2.8.1\AndroidManifest.xml:31:13-68
 379            android:exported="false" >
 379-->[androidx.work:work-runtime:2.8.1] C:\Users\JMN\.gradle\caches\8.9\transforms\5cee5b2ba80d56909e971fad8789d097\transformed\work-runtime-2.8.1\AndroidManifest.xml:32:13-37
