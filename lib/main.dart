@@ -20,7 +20,6 @@ import 'cubit/Global/states.dart';
 import 'cubit/bloc_observer.dart';
 import 'cubit/otp_cubit/cubit.dart';
 import 'firebase_options.dart';
-import 'network/dio_helper.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -61,9 +60,7 @@ class _MyAppState extends State<MyApp> {
         // ),
 
         BlocProvider(
-          create: (BuildContext context) => GlobalCubit()
-
-            ..init(),
+          create: (BuildContext context) => GlobalCubit()..init(),
         ),
 
         BlocProvider(

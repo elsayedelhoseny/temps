@@ -22,7 +22,6 @@ import '../../utils/hex_to_color.dart';
 import '../../utils/images.dart';
 import '../Global/states.dart';
 import '../otp_cubit/cubit.dart';
-import '../../main.dart';
 
 class GlobalCubit extends Cubit<GlobalStates> {
   GlobalCubit() : super(GlobalCubitInitial());
@@ -133,11 +132,6 @@ class GlobalCubit extends Cubit<GlobalStates> {
     splashState();
 
     try {
-      // Get local data values from the local JSON
-      final localJson = MainAppJson.fromJson(dashboardLocalAppMainJson);
-
-      // Extract isBlocked and expirationDate from local data if available
-      // You can set these values in your local JSON file
       isBlocked = false; // Set this based on your local data requirements
       // expirationDate is already set above, modify as needed
 
